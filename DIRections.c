@@ -12,7 +12,7 @@ int main(){
   int size = 0;
 
   while(yes = readdir(stream)){
-    if (yes->d_type == DT_DIR)
+    if (yes->d_type == 0)
       printf("%s (Directory)\n", yes->d_name);
     
     else
